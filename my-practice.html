@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="email-address" type="text" placeholder="email address">
+    <button id="email-btn">Submit</button>
+    <input id="home-address" type="text" placeholder="home address">
+    <button id="home-btn">Submit</button>
+    <button id='add'>Addition</button>
+    <script>
+        document.getElementById('email-btn').addEventListener('click', function () {
+            const email = document.getElementById('email-address');
+            console.log(email.value);
+        })
+        document.getElementById('home-btn').addEventListener('click', function () {
+            const home = document.getElementById('home-address');
+            console.log(home.value);
+        })
+        document.getElementById('add').addEventListener('click', function () {
+            const home = document.getElementById('home-address');
+            const email = document.getElementById('email-address');
+            console.log(parseInt(home.value) + parseInt(email.value));
+        })
+    </script>
+</body>
+
+</html>
